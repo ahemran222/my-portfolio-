@@ -169,11 +169,20 @@
     </section>
 
     <!-- Certificates Section -->
-    <section id="certificates">
-      <h2>My Certificates</h2>
-      <p>My verified certificates and credentials are stored here. <span class="cert-lock">🔒 (Access Restricted)</span></p>
-      <p>For security purposes, these certificates are currently private. If you are a recruiter or client and wish to view them, please contact me to request access.</p>
-    </section>
+    <!-- Certificates Section (Password Protected) -->
+<section id="certificates">
+  <h2>My Certificates</h2>
+  <p><span class="cert-lock">🔒 Access Restricted</span></p>
+  <p>For security purposes, my certificates are protected. If you are a recruiter or client, please click the button below and enter the password provided by me.</p>
+  
+  <button onclick="checkPassword()" style="background-color: #58a6ff; color: #ffffff; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; font-weight: bold; font-size: 1em; margin-top: 10px;">View Certificates</button>
+  
+  <!-- Ei div ta shudhu password dilei dekha jabe -->
+  <div id="certContent" style="display: none; margin-top: 20px; padding: 15px; border: 2px dashed #58a6ff; border-radius: 8px; background: #0d1117;">
+    <p style="color: #3fb950; font-weight: bold; margin-top:0;">✅ Access Granted! Here are my certificates:</p>
+    <p>(Ekhane amra tomar certificate er chobi ba link gulo add korbo pore)</p>
+  </div>
+</section>
 
     <!-- Contact Section -->
     <section id="contact">
@@ -184,6 +193,22 @@
       <p><strong>GitHub:</strong> <a href="https://github.com/ahemran222" style="color: #58a6ff;">github.com/ahemran222</a></p>
     </section>
   </div>
+
+    <script>
+    function checkPassword() {
+      // Tomar password ekhane set koro (Ekhane ami imran123 diyechi, tui chaile poriborton korte paris)
+      var correctPassword = "imran123"; 
+      var userPassword = prompt("Please enter the password to view certificates:");
+      
+      if (userPassword === correctPassword) {
+        document.getElementById("certContent").style.display = "block";
+        alert("Access Granted! Welcome.");
+      } else if (userPassword !== null) {
+        alert("Incorrect Password! Access Denied.");
+      }
+    }
+  </script>
+</body>
 
 </body>
 </html>
