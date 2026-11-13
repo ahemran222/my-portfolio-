@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ahemran - Portfolio</title>
   <style>
-    /* --- CSS Design --- */
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -49,11 +48,26 @@
     .nav-links {
       text-align: center;
       margin-bottom: 20px;
+      padding: 10px;
     }
     .nav-links a {
       color: #58a6ff;
       text-decoration: none;
-      margin: 0 10px;
+      margin: 0 8px;
+      font-weight: bold;
+      font-size: 0.95em;
+    }
+    .job-title {
+      font-weight: bold;
+      color: #e6edf3;
+    }
+    .job-date {
+      font-size: 0.85em;
+      color: #8b949e;
+      margin-bottom: 10px;
+    }
+    .cert-lock {
+      color: #f85149;
       font-weight: bold;
     }
   </style>
@@ -61,6 +75,7 @@
 <body>
 
   <header>
+    <!-- Tomar chobir nam ekhane hobe -->
     <img src="Emran 300x300 Photo.png" alt="Ahemran's Photo" style="width: 130px; height: 130px; border-radius: 50%; object-fit: cover; border: 3px solid #58a6ff; margin-bottom: 15px;">
     <h1>Ahemran</h1>
     <p>Web Developer & Designer</p>
@@ -68,33 +83,58 @@
 
   <div class="nav-links">
     <a href="#about">About</a> | 
+    <a href="#education">Study</a> | 
+    <a href="#experience">Experience</a> | 
     <a href="#projects">Projects</a> | 
-    <a href="#contact">Contact</a>
+    <a href="#certificates">Certificates</a>
   </div>
 
   <div class="container">
+    
     <!-- About Section -->
     <section id="about">
       <h2>About Me</h2>
+      <!-- Ekhane tomar biodata likho -->
       <p>Assalamu Alaikum! Ami Ahemran. Ami web development shikhtesi ebong notun notun project niye kaj korte valobashi. Amar goal holo ekjon professional developer howa.</p>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+      <h2>Education (Study)</h2>
+      <!-- Ekhane tomar porasonar details dao -->
+      <p><strong>Degree Name:</strong> [Tomar Subject/Degree]</p>
+      <p><strong>Institution:</strong> [Tomar College/University-r Nam]</p>
+      <p><strong>Year:</strong> [Suru year] - [Sesh year/Present]</p>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+      <h2>Work Experience</h2>
+      <!-- Ekhane tomar job/office er kajer details dao. Ekadhik thakle ei block ta copy-paste korba -->
+      <div class="job-title">[Tomar Post/Designation]</div>
+      <div class="job-date">[Company Name] | [Month, Year] - [Present/End Date]</div>
+      <p>Ekhane tomar kajer description likho. Tumi oi office e ki ki kaj korte, kon software use korte etc.</p>
     </section>
 
     <!-- Projects Section -->
     <section id="projects">
       <h2>My Projects</h2>
-      <p>Ekhane amar kaj gulo thakbe. Kichudin age ami <b>Jarvis AI Assistant</b> name ekta project korechi. Khub shiggiri ei section a amar shob project er details add korbo.</p>
+      <p><strong>Jarvis AI Assistant:</strong> Eta amar ekta AI based project. Ekhane Jarvis er kaj er details add korbo.</p>
+      <p><strong>My Portfolio:</strong> Ei website ta ami HTML, CSS diye baniyechi.</p>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills">
-      <h2>Skills</h2>
-      <p>HTML, CSS, JavaScript, Problem Solving.</p>
+    <!-- Certificates Section -->
+    <section id="certificates">
+      <h2>My Certificates</h2>
+      <p>Ekhane amar certificate gulo thakbe. <span class="cert-lock">🔒 (Access Restricted)</span></p>
+      <p>Nirapotta (Security) er jonno ei section e thaka certificate gulo shudhu <b>Admin (Ami) permission dilei</b> dekha jabe.</p>
     </section>
 
     <!-- Contact Section -->
     <section id="contact">
       <h2>Contact Me</h2>
-      <p>Email: tomail@example.com</p>
+      <p>Email: [Tomar Email Address]</p>
+      <p>Phone: [Tomar Phone Number]</p>
       <p>GitHub: github.com/ahemran222</p>
     </section>
   </div>
