@@ -91,11 +91,24 @@
       padding: 2px 5px;
       border-radius: 4px;
     }
+    /* Button CSS */
+    .btn-design {
+      display: inline-block; 
+      background-color: #238636; 
+      color: white; 
+      padding: 12px 24px; 
+      text-decoration: none; 
+      border-radius: 6px; 
+      font-weight: bold; 
+      font-size: 1em;
+      margin-top: 15px;
+    }
   </style>
 </head>
 <body>
 
   <header>
+    <!-- Tomar chobir nam ekhane hobe -->
     <img src="Emran 300x300 Photo.png" alt="Imran's Photo" style="width: 130px; height: 130px; border-radius: 50%; object-fit: cover; border: 3px solid #58a6ff; margin-bottom: 15px;">
     <h1>MD Ali Haydar Imran</h1>
     <p>Web Developer | Graphic Designer | Coordinator</p>
@@ -163,26 +176,37 @@
 
     <!-- Projects Section -->
     <section id="projects">
-      <h2>My Projects</h2>
-      <p><strong>Jarvis AI Assistant:</strong> An AI-based project designed to assist with daily tasks and automation. (Details coming soon!)</p>
-      <p><strong>Personal Portfolio Website:</strong> This responsive website built from scratch using HTML and CSS.</p>
+      <h2>My Projects & Designs</h2>
+      <p>Here are some of my recent graphic design works and projects. I have completed over 50+ designs including brochures, leaflets, and social media posts.</p>
+      
+      <!-- Design Gallery Grid (Tumi chaile ekhane tomar chobi add korte paro) -->
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 10px; margin-top: 15px;">
+        <!-- Ekhane tomar chobir nam gulo bosao -->
+        <img src="design1.jpg" alt="Design 1" style="width: 100%; height: 150px; object-fit: cover; border-radius: 8px; border: 1px solid #30363d; cursor: pointer;">
+        <img src="design2.jpg" alt="Design 2" style="width: 100%; height: 150px; object-fit: cover; border-radius: 8px; border: 1px solid #30363d; cursor: pointer;">
+        <img src="jarvis.jpg" alt="Jarvis AI" style="width: 100%; height: 150px; object-fit: cover; border-radius: 8px; border: 1px solid #30363d; cursor: pointer;">
+      </div>
+
+      <!-- Google drive link er jonno button (Tomar deya link ekhane bosaano hoyeche) -->
+      <div style="text-align: center;">
+        <a href="https://drive.google.com/drive/folders/17zrJIOLyao5gmErfsd2xCcii0VIBKngw" target="_blank" class="btn-design">View All 50+ Designs</a>
+      </div>
     </section>
 
-    <!-- Certificates Section -->
     <!-- Certificates Section (Password Protected) -->
-<section id="certificates">
-  <h2>My Certificates</h2>
-  <p><span class="cert-lock">🔒 Access Restricted</span></p>
-  <p>For security purposes, my certificates are protected. If you are a recruiter or client, please click the button below and enter the password provided by me.</p>
-  
-  <button onclick="checkPassword()" style="background-color: #58a6ff; color: #ffffff; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; font-weight: bold; font-size: 1em; margin-top: 10px;">View Certificates</button>
-  
-  <!-- Ei div ta shudhu password dilei dekha jabe -->
-  <div id="certContent" style="display: none; margin-top: 20px; padding: 15px; border: 2px dashed #58a6ff; border-radius: 8px; background: #0d1117;">
-    <p style="color: #3fb950; font-weight: bold; margin-top:0;">✅ Access Granted! Here are my certificates:</p>
-    <p>(Ekhane amra tomar certificate er chobi ba link gulo add korbo pore)</p>
-  </div>
-</section>
+    <section id="certificates">
+      <h2>My Certificates</h2>
+      <p><span class="cert-lock">🔒 Access Restricted</span></p>
+      <p>For security purposes, my certificates are protected. If you are a recruiter or client, please click the button below and enter the password provided by me.</p>
+      
+      <button onclick="checkPassword()" style="background-color: #58a6ff; color: #ffffff; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; font-weight: bold; font-size: 1em; margin-top: 10px;">View Certificates</button>
+      
+      <!-- Ei div ta shudhu password dilei dekha jabe -->
+      <div id="certContent" style="display: none; margin-top: 20px; padding: 15px; border: 2px dashed #58a6ff; border-radius: 8px; background: #0d1117;">
+        <p style="color: #3fb950; font-weight: bold; margin-top:0;">✅ Access Granted! Here are my certificates:</p>
+        <p>(Ekhane amra tomar certificate er chobi ba link gulo add korbo pore)</p>
+      </div>
+    </section>
 
     <!-- Contact Section -->
     <section id="contact">
@@ -194,9 +218,9 @@
     </section>
   </div>
 
-    <script>
+  <!-- Script for Password Protection -->
+  <script>
     function checkPassword() {
-      // Tomar password ekhane set koro (Ekhane ami imran123 diyechi, tui chaile poriborton korte paris)
       var correctPassword = "imran123"; 
       var userPassword = prompt("Please enter the password to view certificates:");
       
@@ -208,7 +232,5 @@
       }
     }
   </script>
-</body>
-
 </body>
 </html>
